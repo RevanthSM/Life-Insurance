@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <style media="screen">
+      .jumbotron {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        color: black;
+        border-radius: 30px;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background-image: linear-gradient(
+            rgba(4, 0, 30, 0.7),
+            rgba(4, 0, 30, 0.7)
+          ),
+          url("https://st2.depositphotos.com/1022214/6012/i/450/depositphotos_60121195-stock-photo-young-man-in-suit-showing.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        opacity: 0.8;
+      }
+
+      .jumbotron h1 {
+        text-align: center;
+        color: black;
+      }
+      .btn {
+        background-color: green;
+      }
+    </style>
+  </head>
+
+  <body>
+    {% include "insurance/navbar.html" %}
+    <br /><br />
+    <div class="jumbotron text-center" style="margin-bottom: 0px">
+      <h1 class="display-4">Hello, Customer</h1>
+      <p class="lead">Welcome to Insurance Management System</p>
+      <hr class="my-4" />
+      <p>You can access various features after Login.</p>
+      <p class="lead">
+        <a class="btn btn-primary btn-lg" href="customersignup" role="button"
+          >Create Your Account</a
+        >
+        <a class="btn btn-primary btn-lg" href="customerlogin" role="button"
+          >Login</a
+        >
+      </p>
+      <br /><br /><br />
+    </div>
+
+    {% include "insurance/footer.html" %}
+  </body>
+</html>

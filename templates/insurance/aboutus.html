@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <style>
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+background-image:linear-gradient(rgba(4,0,30,0.7),rgba(4,0,30,0.7)), url("https://images.news18.com/ibnlive/uploads/2018/03/insurance.jpg");
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: whitesmoke;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            margin-top: 0;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .link-to-policy {
+            display: block;
+            margin-top: 20px;
+        }
+        .link-to-policy a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .link-to-policy a:hover {
+            text-decoration: underline;
+        }
+  </style>
+
+  <title></title>
+</head>
+
+<body>
+
+  {% include "insurance/navbar.html" %}
+<br><br>
+  <div class="container">
+        <h1>Insurance Policy Information</h1>
+        <p>
+            1. Policyholder and Insured Party: The policyholder is the person or entity that purchases the insurance policy. The insured party is the individual or property that is being covered by the policy. In some cases, the policyholder and the insured party are the same, while in others, they can be different. <br>
+
+2. Policy Premium: The policy premium is the amount of money that the policyholder pays to the insurance company for coverage. This can be a one-time payment or a series of regular payments (monthly, quarterly, annually). <br>
+
+3. Coverage and Limits: The policy outlines what risks or events are covered by the insurance. For example, in auto insurance, coverage might include accidents, theft, and liability. Policies also have coverage limits, which specify the maximum amount the insurance company will pay out in the event of a claim. <br>
+
+4. Exclusions: Exclusions are situations or events that the policy does not cover. It's important for policyholders to understand these exclusions to avoid misunderstandings during a claim. <br>
+
+5. Deductibles: A deductible is the amount of money the insured party needs to pay out of pocket before the insurance coverage kicks in. Higher deductibles often lead to lower premiums. <br>
+
+6. Claim Process: The policy should explain how to file a claim in the event of a covered loss. It should outline the steps to take, required documentation, and the timeframe for claims processing. <br>
+
+7. Renewal and Cancellation: The policy should detail the terms of renewal (if applicable) and the conditions under which the insurance company or the policyholder can cancel the policy. <br>
+
+8. Terms and Conditions: This section outlines the legal responsibilities of both the insurance company and the policyholder. It includes information about fraud, misrepresentation, and other contractual obligations. <br>
+
+9. Rider or Endorsement Information: A rider or endorsement is an additional provision added to the policy to modify or expand the coverage. It's important to understand the impact of any riders on the policy. <br>
+
+10. Policy Effective Dates: The policy specifies when the coverage begins and ends. Make sure you're clear on these dates to avoid gaps in coverage. <br>
+
+11. Policy Number: Each policy is assigned a unique policy number. This number is used for identification and reference when dealing with the insurance company. <br>
+
+12. Contact Information: The policy usually includes contact information for the insurance company's customer service, claims department, and other relevant contacts. <br>
+<hr>
+Insurance policies can cover a wide range of areas, including health, life, auto, home, property, business, travel, and more. It's important to carefully read and understand the terms of your policy to ensure you have the coverage you need and to know what to expect in case you need to file a claim. If you have any questions or concerns about your policy, it's recommended to discuss them with your insurance agent or representative. <br>
+        </p>
+        
+        
+    </div>
+  
+
+  {% include "insurance/footer.html" %}
+</body>
+
+</html>
